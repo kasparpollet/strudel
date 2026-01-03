@@ -1,6 +1,9 @@
   // https://www.looperman.com/acapellas/detail/23819/summertime-forever-by-cleelu-170bpm-drum-and-bass-acapella
 setCpm(170/4)
 
+samples({
+  summertime: '/samples/summertime/summertime-forever.mp3'
+}, 'github:kasparpollet/strudel/main');
 
 $drums: stack(
   s("bd:4").beat("0,7?,10",16),

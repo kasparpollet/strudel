@@ -1,5 +1,9 @@
 setCpm(124/4)
 
+samples({
+  shootingstar: '/samples/shootingstar/shooting-star.mp3'
+}, 'github:kasparpollet/strudel/main');
+
 $drums: stack(
   s("bd:1!4").duck("2,3").duckattack(.2).duckdepth(.9).decay(.3),
   s("cp").beat("4,12",16).gain(.8),
@@ -34,7 +38,7 @@ _$ld: s("supersaw").note(
   ._punchcard()
 
 
-$vox: s("shootingstar").scrub("0.01/4").gain(2)
+_$vox: s("shootingstar").scrub("0.01/4").gain(2)
 _$vox: s("shootingstar").scrub("0.01/16").gain(2)
 _$vox: s("shootingstar").scrub("0.41/4").gain(2)
 
@@ -42,7 +46,7 @@ $vox: s("shootingstar")
   .scrub(berlin.fast(16).seg(16).rib("<11@3 <4 3>>",1))
   // .delay(.25).delaytime(rand)
   // .room(1.2)
-  .gain(1.4)
+  .gain(1.6)
   ._scope()
 
 _$riser: s("pulse!16").dec(.1).fm(time).fmh(time).orbit(5)
