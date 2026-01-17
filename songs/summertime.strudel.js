@@ -21,7 +21,7 @@ $bass: s("supersaw!8")
   .gain(1)
   ._punchcard()
 
-_$: chord("<Am C B Em>").offset(-3).voicing()
+_$: chord("<Am C B [B Em>").offset(-3).voicing()
   // .s("gm_epiano1:1")
   .s("supersaw")
   .gain(.6)
